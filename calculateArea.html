@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Calculate AREA</title>
+</head>
+
+<body>
+    <div id="top-container1">
+        <img style="height: 170px;  display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;" src="images/undraw_circles_y7s2 (1).svg">
+        <H1
+            style="text-align: center; border:1px solid rgb(27, 25, 25); margin-left: 20%; margin-right: 20%; padding: 20px;">
+            𝕮𝖆𝖑𝖈𝖚𝖑𝖆𝖙𝖊 𝖆𝖗𝖊𝖆</H1>
+
+        <div id="container1" class="areaCalBlock">
+            <h4> Do you have length of all 3 sides of triangle (SSS) ?</h4>
+            <button id="p" value="Show/Hide" onClick="showHideDiv('op')">yes</button>
+
+            <div id="op" style="display: none;">
+                <input id="op1" class="inputBox inputSide inputInOption1" placeholder="enter the length of side a " />
+                <input id="op2" class="inputBox inputSide inputInOption1" placeholder="enter the length of side b " />
+                <input id="op3" class="inputBox inputSide inputInOption1" placeholder="enter the length of side c " />
+                <div >
+                <button id="CalArea" onClick="Herons_Formula()">Calculate Area</button>          </div>
+                <div id="out1" class="areaShowHere"></div></div>
+  
+        </div>
+
+        <div id="container1" class="areaCalBlock">
+            <h4> Do you havenTwo sides and the angle between them (SAS)?</h4>
+            <button value="Show/Hide" onClick="divl('opp')">yes</button>
+            <div id="opp" style="display: NONE;">
+                <input id="opp1" class="inputBox inputSide inputInOption2" placeholder="enter the length of side a " />
+                <input id="opp2" class="inputBox inputSide inputInOption2" placeholder="enter the length of side b " />
+                <input id="opp3" class="inputBox inputSide inputInOption2" placeholder="enter the angle  " />
+                <button id="CalArea"  onClick="SAS()">Calculate Area</button>
+                <div id="outt1" class="areaShowHere"></div>
+            </div>
+        </div>
+
+        <div id="container1" class="areaCalBlock">
+            <h4>Do you have Two angles and a side between them (ASA)?</h4>
+            <button value="Show/Hide" onClick="showHideDiv2('opl')">yes</button>
+            <div id="opl" style="display: none;">
+                <input id="oppp1" class="inputBox inputSide inputInOption3" placeholder="enter the length of side a " />
+                <input id="oppp2" class="inputBox inputSide inputInOption3" placeholder="enter the angle a " />
+                <input id="oppp3" class="inputBox inputSide inputInOption3" placeholder="enter the angle b " />
+                <button id="CalArea"  onClick="ASA()">Calculate Area</button>
+                <div id="outtt1" class="areaShowHere"></div>
+            </div>
+        </div>
+
+        <div id="container1" class="areaCalBlock">
+
+            <h4>Do you have height and base of triangle ?</h4>
+            <button value="Show/Hide" onClick="showHideDiv3('opm')">yes</button>
+            <div id="opm" style="display: none;">
+                <input id="base" class="inputBox inputSide inputInOption4" placeholder="enter the base  " />
+                <input id="height" class="inputBox inputSide inputInOption4" placeholder="enter the height" />
+                <button id="CalArea"  onClick="simple()">Calculate Area</button>
+                <div id="sim"></div>
+            </div>
+        </div>
+
+        <!-- <div id="container" class="areaCalBlock">
+            <h3>Area of an equilateral triangle </h3>
+            <button value="Show/Hide" onClick="showHideDiv4('op4')">yes</button>
+            <div id="op4" style="display: none;">
+                <input id="eq" placeholder="enter the side of triangle">
+                <button id="si" onclick="equilateral()">enter</button>
+                <div id="sii" class="areaShowHere"></div>
+            </div>
+        </div> -->
+    </div>
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="trianglequiz.css">
+    </link>
+    <title>triangleQuiz</title>
+</head>
+
+<body>
+    <h1 style="text-align: center; "> 𝖙𝖗𝖎𝖆𝖓𝖌𝖑𝖊 𝖖𝖚𝖎𝖟</h1>
+    <form class="formQuiz">
+        <div id="que">
+            <label class="label  question">What is a triangle called if all its angles are acute angles?</label>
+            <br>
+            <!-- NAME ::  is same for one question to toggle between the que so that it chooses only one option  -->
+            <!-- also all que have differnt name so that all que chooses respective ans  -->
+            <!-- value helps in choosing ans in js  -->
+
+            <label for="radio1" class="label">
+                <input required type="radio" id="radio1" name="que1" value="option1">
+                acute angled triangle </label>
+
+            <label for="radio2" class="label"><input required type="radio" id="radio2" name="que1" value="option2">
+                golden triangle
+            </label>
+            <label for="radio3" class="label"><input required type="radio" id="radio3" name="que1" value="option3">
+                severe triangle
+            </label>
+            <label for="radio4" class="label"><input required type="radio" id="radio4" name="que1" value="option4">
+                oblique triangle
+            </label>
+        </div>
+        <br>
+        <br>
+
+        <div id="que">
+            <label class="label  question"> What is a triangle called if one angle is a right angle?</label>
+            <br>
+            <label for="radio5" class="label">
+                <input required type="radio" id="radio5" name="que2" value="option1">
+                left angled triangle </label>
+
+            <label for="radio6" class="label"><input required type="radio" id="radio6" name="que2" value="option2">
+                wrong angled triangle
+            </label>
+            <label for="radio7" class="label"><input required type="radio" id="radio7" name="que2" value="option3">
+                right angled triangle
+
+            </label>
+            <label for="radio8" class="label"><input required type="radio" id="radio8" name="que2" value="option4">
+                simplex triangle
+
+            </label>
+        </div>
+        <br>
+        <br>
+        <div id="que">
+            <label class="label  question"> What is a triangle called if lengths of all three sides are
+                equal?</label>
+            <br>
+            <label for="radio9" class="label">
+                <input required type="radio" id="radio9" name="que3" value="option1">
+                unilateral triangle </label>
+
+            <label for="radio10" class="label"><input required type="radio" id="radio10" name="que3" value="option2">
+                equilateral triangle
+            </label>
+            <label for="radio11" class="label"><input required type="radio" id="radio11" name="que3" value="option3">
+                bilateral triangle
+
+            </label>
+            <label for="radio12" class="label"><input required type="radio" id="radio12" name="que3" value="option4">
+                multilateral triangle
+
+            </label>
+        </div>
+        <br>
+        <br>
+
+        <div id="que">
+            <label class="label question">What is the type of triangle if the sides of ∆ DEF are 5.3 cm, 4.2 cm and
+                6.6 cm
+                in length?
+            </label>
+            <br>
+            <label for="radio13" class="label">
+                <input required type="radio" id="radio13" name="que4" value="option1">
+                scalene triangle
+            </label>
+
+            <label for="radio14" class="label"><input required type="radio" id="radio14" name="que4" value="option2">
+                equilateral triangle
+            </label>
+            <label for="radio15" class="label"><input required type="radio" id="radio15" name="que4" value="option3">
+                isosceles triangle
+
+            </label>
+            <label for="radio16" class="label"><input required type="radio" id="radio16" name="que4" value="option4">
+                elliptical triangle
+
+
+            </label>
+        </div>
+        <br>
+        <br>
+
+        <div id="que">
+            <label class=" label question">What is the type of triangle if the sides of ∆ DEF are 5.3 cm, 5.3
+                cm and 6.6 cm in length?
+            </label>
+            <br>
+            <label for="radio17" class="label"> <input required type="radio" id="radio17" name="que5" value="option1">
+                hyperbolic triangle
+
+            </label>
+
+            <label for="radio18" class="label"><input required type="radio" id="radio18" name="que5" value="option2">
+                equilateral triangle
+            </label>
+            <label for="radio19" class="label"><input required type="radio" id="radio19" name="que5" value="option3">
+                isosceles triangle
+
+            </label>
+            <label for="radio20" class="label"><input required type="radio" id="radio20" name="que5" value="option4">
+                scalene triangle
+
+
+            </label>
+        </div>
+
+
+
+    </form>
+    <br>
+    <br>
+
+
+
+    <div id="output">
+        <button id="submit"> submit</button>
+        <br>
+        <label class="label">score::</label>
+        <div class="scorehere"></div>
+
+    </div>
+    <script src="triangleQuiz.js"></script>
+</body>
+
+</html>
