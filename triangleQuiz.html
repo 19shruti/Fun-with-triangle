@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
     <link rel="stylesheet" href="trianglequiz.css">
     </link>
     <title>triangleQuiz</title>
 </head>
 
-<body>
+<body> 
+     <a href="index.html"><i style="float: right; margin-right: 10px;margin-top: 2px;"  class="fa fa-sign-out fa-2x" aria-hidden="true"></i></a>
     <h1 style="text-align: center; "> 𝖙𝖗𝖎𝖆𝖓𝖌𝖑𝖊 𝖖𝖚𝖎𝖟</h1>
+  
     <form class="formQuiz">
         <div id="que">
             <label class="label  question">What is a triangle called if all its angles are acute angles?</label>
@@ -38,7 +41,7 @@
         <br>
 
         <div id="que">
-            <label class="label  question"> What is a triangle called if one angle is a right angle?</label>
+            <label class="label  question" > What is a triangle called if one angle is a right angle?</label>
             <br>
             <label for="radio5" class="label">
                 <input required type="radio" id="radio5" name="que2" value="option1">
@@ -104,6 +107,7 @@
 
 
             </label>
+            <div id="ans"></div>
         </div>
         <br>
         <br>
@@ -132,8 +136,8 @@
             </label>
         </div>
 
-
-
+<div  id="output">
+ <button id="submit" > submit</button></div>
     </form>
     <br>
     <br>
@@ -141,9 +145,9 @@
 
 
     <div id="output">
-        <button id="submit"> submit</button>
+       <small>For each correct answer you will get 1 point</small>
         <br>
-        <label class="label">score::</label>
+      
         <div class="scorehere"></div>
 
     </div>
