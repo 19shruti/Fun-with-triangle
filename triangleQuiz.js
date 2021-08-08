@@ -6,7 +6,7 @@ const scorebox=document.querySelector(".scorehere");
 const submit=document.querySelector("#submit");
 const ans=document.querySelectorAll("#ans");
 
-const correctAns=["option1","option3","option2","option1","option3"];
+const correctAns=["option1","option3","option2","option1","option3","option1"];
 
 let score=0; 
  console.log("entry");
